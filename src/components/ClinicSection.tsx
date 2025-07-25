@@ -3,21 +3,23 @@ import { Calendar, Phone } from "lucide-react";
 
 const ClinicSection = () => {
   return (
-    <section className="py-20 bg-primary text-white relative overflow-hidden">
-      {/* Background pattern */}
-      <div 
-        className="absolute inset-0 opacity-20"
-        style={{
-          backgroundImage: `url(/lovable-uploads/20f1f76b-6d17-4d37-9346-a3ab6abbd934.png)`,
-          backgroundRepeat: "repeat",
-          backgroundSize: "100px 100px"
-        }}
-      ></div>
+    <section className="py-20 bg-background relative overflow-hidden">
+      {/* Blue curved section */}
+      <div className="absolute inset-0">
+        <div 
+          className="bg-primary h-full rounded-r-[200px] mr-32"
+          style={{
+            backgroundImage: `url(/lovable-uploads/6f731a91-6390-49dd-8daa-0cec690c4166.png)`,
+            backgroundRepeat: "repeat",
+            backgroundSize: "60px 60px"
+          }}
+        ></div>
+      </div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
-          <div className="space-y-8">
+          <div className="space-y-8 text-white">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               No nosso centro clínico
             </h2>
@@ -44,7 +46,7 @@ const ClinicSection = () => {
             <Button
               size="lg"
               variant="secondary"
-              className="bg-white text-primary hover:bg-gray-100 font-semibold px-8 py-4"
+              className="bg-white text-primary hover:bg-gray-100 font-semibold px-8 py-4 shadow-lg"
               asChild
             >
               <a href="#marcacao" className="inline-flex items-center gap-2">
