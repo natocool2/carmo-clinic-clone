@@ -5,6 +5,7 @@ import ClinicSection from "@/components/ClinicSection";
 import TrustSection from "@/components/TrustSection";
 import HealthStepsSection from "@/components/HealthStepsSection";
 import ServicesSection from "@/components/ServicesSection";
+import HealthCTASection from "@/components/HealthCTASection";
 import MedicalGallery from "@/components/MedicalGallery";
 import CTASection from "@/components/CTASection";
 import TestimonialsSection from "@/components/TestimonialsSection";
@@ -20,6 +21,7 @@ const Index = () => {
       <TrustSection />
       <HealthStepsSection />
       <ServicesSection />
+      <HealthCTASection />
       <CTASection />
       <TestimonialsSection />
       <ContactSection />
