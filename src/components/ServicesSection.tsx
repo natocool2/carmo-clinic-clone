@@ -36,7 +36,7 @@ const services = [
     number: "06.",
     title: "Ginecologia e Obstetrícia",
     description: "Diagnóstico e tratamento de doenças do sistema reprodutor feminino e cuidados relacionados com a gravidez.",
-    image: "/lovable-uploads/b556f0d2-3c80-489a-8c1b-d2eb35956a15.png"
+    image: "/lovable-uploads/77fbe6f0-a76f-43b0-9f44-067356f56798.png"
   },
   {
     number: "07.",
