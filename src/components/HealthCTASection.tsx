@@ -16,7 +16,7 @@ const HealthCTASection = () => {
       </div>
       
       {/* Blue/Purple Overlay - Opaque from right to 10px left of center, then gradient to transparent left */}
-      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent via-blue-600/95 to-blue-600/95" style={{backgroundImage: 'linear-gradient(to right, transparent 0%, transparent 40%, hsl(var(--blue-600) / 0.95) 45%, hsl(var(--blue-600) / 0.95) 100%)'}}></div>
+      <div className="absolute inset-0" style={{background: 'linear-gradient(to right, transparent 0%, transparent 40%, rgba(37, 99, 235, 0.95) 45%, rgba(37, 99, 235, 0.95) 100%)'}}></div>
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4">
