@@ -21,25 +21,25 @@ const Header = () => {
           <nav className="hidden md:flex items-center space-x-8">
             <a
               href="#sobre"
-              className="text-foreground hover:text-primary transition-colors font-medium"
+              className="text-white hover:text-primary transition-colors font-medium"
             >
               Sobre
             </a>
             <a
               href="/lista-de-servicos"
-              className="text-foreground hover:text-primary transition-colors font-medium"
+              className="text-white hover:text-primary transition-colors font-medium"
             >
               Serviços
             </a>
             <a
               href="#marcacao"
-              className="text-foreground hover:text-primary transition-colors font-medium"
+              className="text-white hover:text-primary transition-colors font-medium"
             >
               Ver no Mapa
             </a>
             <a
               href="#contact"
-              className="text-foreground hover:text-primary transition-colors font-medium"
+              className="text-white hover:text-primary transition-colors font-medium"
             >
               Contactar-nos
             </a>
@@ -47,15 +47,15 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button asChild>
+            <Button className="bg-primary hover:bg-primary-variant text-white font-semibold" asChild>
               <a href="tel:00351912258575">
-                Marcações: +(351) 912 258 575
+                Marcações: (+351) 912 258 575
               </a>
             </Button>
           </div>
 
           {/* Mobile Menu Button */}
-          <button className="md:hidden p-2">
+          <button className="md:hidden p-2 text-white">
             <svg
               className="w-6 h-6"
               fill="none"
