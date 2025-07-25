@@ -52,6 +52,7 @@ All colors MUST be HSL. Based on Medicarmo brand colors.
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--medicarmo-blue)), hsl(var(--medicarmo-dark-blue)));
     --gradient-overlay: linear-gradient(180deg, hsl(26 13% 10% / 0.8), hsl(26 13% 20% / 0.8));
+    --gradient-cta: linear-gradient(90deg, transparent 0%, hsl(var(--medicarmo-blue) / 0.9) 100%);
 
     /* Shadows */
     --shadow-subtle: 0 1px 3px hsl(220 13% 91% / 0.5);

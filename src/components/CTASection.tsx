@@ -14,7 +14,7 @@ const CTASection = () => {
       }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-overlay"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-transparent to-primary/90"></div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
