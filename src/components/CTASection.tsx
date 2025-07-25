@@ -23,25 +23,13 @@ const CTASection = () => {
           
           {/* Content aligned to the right */}
           <div className="text-center lg:text-left">
-            <h2 className="text-sm font-bold mb-6">
-              Cuidados abrangentes e serviços médicos
-            </h2>
-            <p className="text-lg md:text-xl mb-8 opacity-90">
-              Marque já a sua consulta e tenha acesso aos melhores cuidados de saúde do Algarve. 
-              A nossa equipa está pronta para cuidar de si e da sua família.
+            <p className="text-sm mb-4 opacity-90">
+              Invista na sua saúde hoje!
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button
-                size="lg"
-                variant="secondary"
-                asChild
-                className="bg-white text-primary hover:bg-gray-100"
-              >
-                <a href="tel:00351912258575" className="inline-flex items-center gap-2">
-                  <Phone className="w-5 h-5" />
-                  Ligar Agora
-                </a>
-              </Button>
+            <h2 className="text-lg md:text-xl font-bold mb-8">
+              Cuidados abrangentes e serviços médicos especializados para o manter no seu melhor
+            </h2>
+            <div className="flex justify-center lg:justify-start">
               <Button
                 size="lg"
                 variant="outline"
@@ -50,7 +38,7 @@ const CTASection = () => {
               >
                 <a href="#marcacao" className="inline-flex items-center gap-2">
                   <Calendar className="w-5 h-5" />
-                  Marcar Consulta
+                  Fazer Marcação
                 </a>
               </Button>
             </div>
