@@ -39,8 +39,8 @@ const ClinicSection = () => {
             </div>
           </div>
 
-          {/* CTA Button */}
-          <div className="flex justify-center lg:justify-end">
+          {/* CTA Button - positioned within blue area */}
+          <div className="flex justify-center lg:justify-start lg:ml-20">
             <Button
               size="lg"
               variant="secondary"
