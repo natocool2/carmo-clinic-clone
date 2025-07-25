@@ -1,57 +1,73 @@
-import { Shield, Clock, Award, Users } from "lucide-react";
-
 const TrustSection = () => {
   return (
-    <section className="py-20 bg-medicarmo-light-gray">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-            A sua clínica de confiança
-          </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Oferecemos cuidados de saúde personalizados com a máxima qualidade e dedicação.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="text-center">
-            <div className="bg-primary rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-              <Shield className="w-8 h-8 text-white" />
+    <section className="py-20 bg-background relative overflow-hidden">
+      {/* Background pattern */}
+      <div 
+        className="absolute inset-0 opacity-10"
+        style={{
+          backgroundImage: `url(/lovable-uploads/36279678-d9bc-4a4a-ac7a-b9994a66f05a.png)`,
+          backgroundRepeat: "repeat",
+          backgroundSize: "50px 50px"
+        }}
+      ></div>
+      
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Image with overlapping circles */}
+          <div className="relative">
+            <div className="relative w-full max-w-md mx-auto">
+              {/* Main oval image container */}
+              <div className="w-80 h-80 rounded-full overflow-hidden shadow-large relative">
+                <img
+                  src="/lovable-uploads/a620d0e5-8168-42c7-99e7-3e614d0b9bb1.png"
+                  alt="Médica com estetoscópio"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              
+              {/* Overlapping image - top left */}
+              <div className="absolute top-0 left-0 w-32 h-32 rounded-full overflow-hidden shadow-lg border-4 border-white">
+                <img
+                  src="/lovable-uploads/fe70c985-49cb-434c-ae2b-aa3203bd2395.png"
+                  alt="Equipamento dentário"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              
+              {/* Overlapping image - bottom center */}
+              <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/4 w-40 h-40 rounded-full overflow-hidden shadow-lg border-4 border-white">
+                <img
+                  src="/lovable-uploads/22451cb8-29a8-4573-9848-bcdc48d2c43a.png"
+                  alt="Consultório dentário"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
-            <h3 className="font-semibold text-foreground mb-2">Segurança</h3>
-            <p className="text-muted-foreground text-sm">
-              Protocolos rigorosos de higiene e segurança
-            </p>
           </div>
 
-          <div className="text-center">
-            <div className="bg-primary rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-              <Clock className="w-8 h-8 text-white" />
+          {/* Content */}
+          <div className="space-y-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+              A sua clínica de confiança
+            </h2>
+            <h3 className="text-xl font-medium text-muted-foreground">
+              Experimente os cuidados de saúde excepcionais
+            </h3>
+            
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>
+                Os nossos médicos são altamente treinados e experientes nas suas áreas, e utilizam a mais recente tecnologia e técnicas para assegurar que recebe o tratamento mais eficaz.
+              </p>
+              <p>
+                Temos também um pessoal simpático e conhecedor que está sempre disponível para ajudar e responder a quaisquer perguntas que possa ter.
+              </p>
             </div>
-            <h3 className="font-semibold text-foreground mb-2">Rapidez</h3>
-            <p className="text-muted-foreground text-sm">
-              Marcações rápidas e tempos de espera reduzidos
-            </p>
-          </div>
-
-          <div className="text-center">
-            <div className="bg-primary rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-              <Award className="w-8 h-8 text-white" />
+            
+            <div className="pt-4">
+              <h4 className="text-lg font-semibold text-foreground">
+                Venha conhecer-nos!
+              </h4>
             </div>
-            <h3 className="font-semibold text-foreground mb-2">Qualidade</h3>
-            <p className="text-muted-foreground text-sm">
-              Profissionais especializados e equipamentos modernos
-            </p>
-          </div>
-
-          <div className="text-center">
-            <div className="bg-primary rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-              <Users className="w-8 h-8 text-white" />
-            </div>
-            <h3 className="font-semibold text-foreground mb-2">Cuidado</h3>
-            <p className="text-muted-foreground text-sm">
-              Atendimento personalizado e humanizado
-            </p>
           </div>
         </div>
       </div>
