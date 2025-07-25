@@ -3,21 +3,21 @@ import { Calendar, Phone } from "lucide-react";
 
 const ClinicSection = () => {
   return (
-    <section className="py-20 bg-primary text-white relative overflow-hidden">
-      {/* Background pattern - dots on the right side */}
+    <section className="py-20 bg-background relative overflow-hidden">
+      {/* Blue area that doesn't go to the end */}
       <div 
-        className="absolute right-0 top-0 w-96 h-full opacity-30"
+        className="absolute inset-0 mr-32 bg-primary rounded-r-[100px]"
         style={{
-          backgroundImage: `url(/lovable-uploads/6f731a91-6390-49dd-8daa-0cec690c4166.png)`,
+          backgroundImage: `url(/lovable-uploads/36279678-d9bc-4a4a-ac7a-b9994a66f05a.png)`,
           backgroundRepeat: "repeat",
-          backgroundSize: "40px 40px"
+          backgroundSize: "50px 50px"
         }}
       ></div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
-          <div className="space-y-8">
+          <div className="space-y-8 text-white">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               No nosso centro clínico
             </h2>
