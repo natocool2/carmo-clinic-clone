@@ -12,7 +12,7 @@ const services = [
     number: "02.",
     title: "Clínica Geral",
     description: "Diagnóstico e tratamento de diversos tipos de doença, com prevenção e encaminhamento.",
-    image: "https://images.unsplash.com/premium_photo-1664477117399-4e2e5af26deb"
+    image: "/lovable-uploads/e7ccd59a-ac93-480e-a806-49bd23e0116f.png"
   },
   {
     number: "03.",
