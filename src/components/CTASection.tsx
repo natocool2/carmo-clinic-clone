@@ -17,37 +17,43 @@ const CTASection = () => {
       <div className="absolute inset-0 bg-gradient-overlay"></div>
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center md:text-right max-w-3xl md:ml-auto mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Cuidados abrangentes e serviços médicos
-          </h2>
-          <p className="text-lg mb-8 opacity-90">
-            Marque já a sua consulta e tenha acesso aos melhores cuidados de saúde do Algarve. 
-            A nossa equipa está pronta para cuidar de si e da sua família.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-end">
-            <Button
-              size="lg"
-              variant="secondary"
-              asChild
-              className="bg-white text-primary hover:bg-gray-100"
-            >
-              <a href="tel:00351912258575" className="inline-flex items-center gap-2">
-                <Phone className="w-5 h-5" />
-                Ligar Agora
-              </a>
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              asChild
-              className="border-white text-white hover:bg-white hover:text-primary"
-            >
-              <a href="#marcacao" className="inline-flex items-center gap-2">
-                <Calendar className="w-5 h-5" />
-                Marcar Consulta
-              </a>
-            </Button>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          {/* Empty space on the left */}
+          <div></div>
+          
+          {/* Content aligned to the right */}
+          <div className="text-center lg:text-left">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Cuidados abrangentes e serviços médicos
+            </h2>
+            <p className="text-lg mb-8 opacity-90">
+              Marque já a sua consulta e tenha acesso aos melhores cuidados de saúde do Algarve. 
+              A nossa equipa está pronta para cuidar de si e da sua família.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <Button
+                size="lg"
+                variant="secondary"
+                asChild
+                className="bg-white text-primary hover:bg-gray-100"
+              >
+                <a href="tel:00351912258575" className="inline-flex items-center gap-2">
+                  <Phone className="w-5 h-5" />
+                  Ligar Agora
+                </a>
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                asChild
+                className="border-white text-white hover:bg-white hover:text-primary"
+              >
+                <a href="#marcacao" className="inline-flex items-center gap-2">
+                  <Calendar className="w-5 h-5" />
+                  Marcar Consulta
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
       </div>
