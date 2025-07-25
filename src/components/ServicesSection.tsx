@@ -1,62 +1,125 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Phone, Smile, Handshake, Building2 } from "lucide-react";
+import { Phone } from "lucide-react";
 
-const steps = [
+const services = [
   {
-    title: "Contacte-nos",
-    description: "Marque uma consulta e visite a nossa clínica numa altura oportuna para si.",
-    icon: Phone
+    number: "01.",
+    title: "Análises Clínicas",
+    description: "Serviço de testes diagnósticos e análises abrangentes.",
+    image: "/lovable-uploads/1f216190-c2db-458f-aad3-c47c02a5a4cc.png"
   },
   {
-    title: "Cuide da sua saúde",
-    description: "Os nossos médicos e enfermeiros irão avaliar a sua saúde e fornecer um diagnóstico",
-    icon: Smile
+    number: "02.",
+    title: "Clínica Geral",
+    description: "Diagnóstico e tratamento de diversos tipos de doença, com prevenção e encaminhamento.",
+    image: "/lovable-uploads/a620d0e5-8168-42c7-99e7-3e614d0b9bb1.png"
   },
   {
-    title: "Receba cuidados personalizados",
-    description: "A nossa equipa trabalhará consigo para desenvolver um plano de tratamento adaptado às suas necessidades",
-    icon: Handshake
+    number: "03.",
+    title: "Dermatologia",
+    description: "Diagnóstico e tratamento de doenças de pele, cabelo, unhas e doenças venéreas.",
+    image: "/lovable-uploads/2beb9e0b-ea73-4e93-a4de-664be6c48314.png"
   },
   {
-    title: "Mantenha-se saudável",
-    description: "Forneceremos apoio e educação contínuos para o ajudar a manter uma boa saúde.",
-    icon: Building2
+    number: "04.",
+    title: "Endocrinologia",
+    description: "Diagnóstico e tratamento de desequilíbrios hormonais, incluindo diabetes e tiroide, hipófise, e disfunção adrenal.",
+    image: "/lovable-uploads/1d2761f2-1e5f-424c-a8cd-0cc07109b4de.png"
+  },
+  {
+    number: "05.",
+    title: "Gastroenterologia",
+    description: "Diagnóstico e tratamento de doenças do esófago, estômago, fígado, intestino, pâncreas.",
+    image: "/lovable-uploads/f0c48ff2-03d9-4be6-ba1d-0b4713d57894.png"
+  },
+  {
+    number: "06.",
+    title: "Ginecologia e Obstetrícia",
+    description: "Diagnóstico e tratamento de doenças do sistema reprodutor feminino e cuidados relacionados com a gravidez.",
+    image: "/lovable-uploads/1d2761f2-1e5f-424c-a8cd-0cc07109b4de.png"
+  },
+  {
+    number: "07.",
+    title: "Medicina Dentária",
+    description: "Diagnóstico, tratamento e prevenção de doenças dos dentes, boca e estruturas associadas.",
+    image: "/lovable-uploads/fe70c985-49cb-434c-ae2b-aa3203bd2395.png"
+  },
+  {
+    number: "08.",
+    title: "Medicina Interna",
+    description: "Diagnóstico e tratamento de doenças dos órgãos internos. Avaliação do paciente como um todo.",
+    image: "/lovable-uploads/ee4a5a8a-f851-403a-8d92-d101fee75300.png"
   }
 ];
 
 const ServicesSection = () => {
   return (
-    <section className="py-20 bg-background">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            A sua saúde em boas mãos
-          </h2>
-          <p className="text-muted-foreground text-lg">
-            Cuidando da sua saúde, a um passo de cada vez
-          </p>
-        </div>
+    <section className="py-20 bg-background relative overflow-hidden">
+      {/* Background pattern */}
+      <div 
+        className="absolute inset-0 opacity-10"
+        style={{
+          backgroundImage: `url(/lovable-uploads/36279678-d9bc-4a4a-ac7a-b9994a66f05a.png)`,
+          backgroundRepeat: "repeat",
+          backgroundSize: "50px 50px"
+        }}
+      ></div>
+      
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          {/* Content Header */}
+          <div className="lg:col-span-1 space-y-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+              Serviços médicos especializados
+            </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              Cuidados compassivos para todas as suas necessidades médicas
+            </p>
+          </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {steps.map((step, index) => {
-            const IconComponent = step.icon;
-            return (
-              <div key={index} className="text-center space-y-4">
-                <div className="flex justify-center">
-                  <div className="w-16 h-16 bg-primary rounded-lg flex items-center justify-center">
-                    <IconComponent className="w-8 h-8 text-white" />
+          {/* Services Grid */}
+          <div className="lg:col-span-2">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {services.map((service, index) => (
+                <div 
+                  key={index}
+                  className="relative h-48 rounded-lg overflow-hidden group cursor-pointer"
+                  style={{
+                    backgroundImage: `url(${service.image})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center"
+                  }}
+                >
+                  {/* Overlay */}
+                  <div className="absolute inset-0 bg-black/60 group-hover:bg-black/70 transition-colors"></div>
+                  
+                  {/* Content */}
+                  <div className="relative z-10 p-6 h-full flex flex-col justify-end text-white">
+                    <div className="space-y-2">
+                      <div className="text-sm font-medium opacity-80">{service.number}</div>
+                      <h3 className="font-semibold text-lg">{service.title}</h3>
+                      <p className="text-sm opacity-90 leading-relaxed">{service.description}</p>
+                    </div>
                   </div>
                 </div>
-                <h3 className="text-lg font-semibold text-foreground">
-                  {step.title}
-                </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
-                  {step.description}
-                </p>
+              ))}
+              
+              {/* Contact Card */}
+              <div className="relative h-48 rounded-lg overflow-hidden bg-primary text-white p-6 flex flex-col justify-center">
+                <div className="space-y-4">
+                  <div className="flex items-center gap-2">
+                    <Phone className="w-5 h-5" />
+                    <span className="font-medium">Ver todos os nossos serviços</span>
+                  </div>
+                  <div className="space-y-2">
+                    <div className="text-xl font-bold">+(351) 912 258 575</div>
+                    <div className="text-xl font-bold">+(351) 289 889 560</div>
+                    <div className="text-xs opacity-80">*Valor de uma chamada local</div>
+                  </div>
+                </div>
               </div>
-            );
-          })}
+            </div>
+          </div>
         </div>
       </div>
     </section>
