@@ -6,49 +6,49 @@ const services = [
     number: "01.",
     title: "Análises Clínicas",
     description: "Serviço de testes diagnósticos e análises abrangentes.",
-    image: "/lovable-uploads/1f216190-c2db-458f-aad3-c47c02a5a4cc.png"
+    image: "https://images.unsplash.com/premium_photo-1664477117399-4e2e5af26deb"
   },
   {
     number: "02.",
     title: "Clínica Geral",
     description: "Diagnóstico e tratamento de diversos tipos de doença, com prevenção e encaminhamento.",
-    image: "/lovable-uploads/a620d0e5-8168-42c7-99e7-3e614d0b9bb1.png"
+    image: "/lovable-uploads/866b9d44-8a1e-410c-8294-4e951e4ccb4b.png"
   },
   {
     number: "03.",
     title: "Dermatologia",
     description: "Diagnóstico e tratamento de doenças de pele, cabelo, unhas e doenças venéreas.",
-    image: "/lovable-uploads/2beb9e0b-ea73-4e93-a4de-664be6c48314.png"
+    image: "/lovable-uploads/72173713-c1ef-451d-955c-f02f4faa9ee7.png"
   },
   {
     number: "04.",
     title: "Endocrinologia",
     description: "Diagnóstico e tratamento de desequilíbrios hormonais, incluindo diabetes e tiroide, hipófise, e disfunção adrenal.",
-    image: "/lovable-uploads/1d2761f2-1e5f-424c-a8cd-0cc07109b4de.png"
+    image: "https://images.unsplash.com/premium_photo-1661779717978-d7937fa08250"
   },
   {
     number: "05.",
     title: "Gastroenterologia",
     description: "Diagnóstico e tratamento de doenças do esófago, estômago, fígado, intestino, pâncreas.",
-    image: "/lovable-uploads/f0c48ff2-03d9-4be6-ba1d-0b4713d57894.png"
+    image: "https://images.unsplash.com/premium_photo-1661729451252-ac426ba983cd"
   },
   {
     number: "06.",
     title: "Ginecologia e Obstetrícia",
     description: "Diagnóstico e tratamento de doenças do sistema reprodutor feminino e cuidados relacionados com a gravidez.",
-    image: "/lovable-uploads/1d2761f2-1e5f-424c-a8cd-0cc07109b4de.png"
+    image: "/lovable-uploads/6fbfb27e-cb40-49cd-8385-4ab1edc1f352.png"
   },
   {
     number: "07.",
     title: "Medicina Dentária",
     description: "Diagnóstico, tratamento e prevenção de doenças dos dentes, boca e estruturas associadas.",
-    image: "/lovable-uploads/fe70c985-49cb-434c-ae2b-aa3203bd2395.png"
+    image: "/lovable-uploads/ef20d802-40c8-489e-9ee6-d9b8be5c2244.png"
   },
   {
     number: "08.",
     title: "Medicina Interna",
     description: "Diagnóstico e tratamento de doenças dos órgãos internos. Avaliação do paciente como um todo.",
-    image: "/lovable-uploads/ee4a5a8a-f851-403a-8d92-d101fee75300.png"
+    image: "/lovable-uploads/ef20d802-40c8-489e-9ee6-d9b8be5c2244.png"
   }
 ];
 
