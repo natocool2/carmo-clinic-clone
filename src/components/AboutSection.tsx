@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Heart, Stethoscope, MapPin } from "lucide-react";
+import { Home, Briefcase, MapPin } from "lucide-react";
 const doctorPortrait = "/lovable-uploads/2beb9e0b-ea73-4e93-a4de-664be6c48314.png";
 
 const AboutSection = () => {
@@ -19,8 +19,8 @@ const AboutSection = () => {
             {/* Features */}
             <div className="space-y-6">
               <div className="flex items-start gap-4">
-                <div className="bg-primary rounded-full p-3 flex-shrink-0">
-                  <Heart className="w-6 h-6 text-primary-foreground" />
+                <div className="bg-primary rounded-lg p-3 flex-shrink-0">
+                  <Home className="w-6 h-6 text-white" />
                 </div>
                 <div>
                   <h5 className="font-semibold text-foreground mb-2">
@@ -33,8 +33,8 @@ const AboutSection = () => {
               </div>
               
               <div className="flex items-start gap-4">
-                <div className="bg-primary rounded-full p-3 flex-shrink-0">
-                  <Stethoscope className="w-6 h-6 text-primary-foreground" />
+                <div className="bg-primary rounded-lg p-3 flex-shrink-0">
+                  <Briefcase className="w-6 h-6 text-white" />
                 </div>
                 <div>
                   <h5 className="font-semibold text-foreground mb-2">
@@ -47,7 +47,7 @@ const AboutSection = () => {
               </div>
             </div>
 
-            <Button variant="outline" asChild className="w-fit">
+            <Button variant="outline" asChild className="w-fit border-primary text-primary hover:bg-primary hover:text-white">
               <a
                 href="https://www.google.com/maps?ll=37.019211,-7.934308&z=15&t=m&hl=en-US&gl=US&mapclient=embed&cid=11404537850832180447"
                 target="_blank"
@@ -55,20 +55,27 @@ const AboutSection = () => {
                 className="inline-flex items-center gap-2"
               >
                 <MapPin className="w-4 h-4" />
-                Ver no mapa
+                Ver No Mapa
               </a>
             </Button>
           </div>
 
           {/* Image */}
           <div className="relative">
-            <div className="bg-medicarmo-light-blue rounded-full absolute top-8 right-8 w-32 h-32 z-0"></div>
-            <div className="relative z-10">
+            <div className="relative">
               <img
                 src={doctorPortrait}
-                alt="Doutora"
+                alt="Dra. Rita - Medicarmo"
                 className="rounded-lg shadow-large w-full max-w-md mx-auto"
               />
+              {/* Logo overlay */}
+              <div className="absolute bottom-4 right-4 bg-white rounded-full p-2 shadow-lg">
+                <img
+                  src="/lovable-uploads/d36dd2e3-18fb-4842-9274-c053baf16eea.png"
+                  alt="Medicarmo Logo"
+                  className="w-20 h-20"
+                />
+              </div>
             </div>
           </div>
         </div>
