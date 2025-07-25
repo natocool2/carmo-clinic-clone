@@ -30,7 +30,7 @@ const services = [
     number: "05.",
     title: "Gastroenterologia",
     description: "Diagnóstico e tratamento de doenças do esófago, estômago, fígado, intestino, pâncreas.",
-    image: "/lovable-uploads/f2a789b8-bf65-494c-a1a3-832e9deb9751.png"
+    image: "/lovable-uploads/d3b66191-cdc1-4db1-9648-c9d2df561c7b.png"
   },
   {
     number: "06.",
