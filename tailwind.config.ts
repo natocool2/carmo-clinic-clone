@@ -26,7 +26,8 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					variant: 'hsl(var(--primary-variant))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -61,7 +62,23 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				medicarmo: {
+					blue: 'hsl(var(--medicarmo-blue))',
+					'dark-blue': 'hsl(var(--medicarmo-dark-blue))',
+					'light-blue': 'hsl(var(--medicarmo-light-blue))',
+					gray: 'hsl(var(--medicarmo-gray))',
+					'light-gray': 'hsl(var(--medicarmo-light-gray))'
 				}
+			},
+			backgroundImage: {
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-overlay': 'var(--gradient-overlay)'
+			},
+			boxShadow: {
+				'subtle': 'var(--shadow-subtle)',
+				'medium': 'var(--shadow-medium)',
+				'large': 'var(--shadow-large)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
