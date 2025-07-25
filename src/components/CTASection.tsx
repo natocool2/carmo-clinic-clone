@@ -23,10 +23,10 @@ const CTASection = () => {
           
           {/* Content aligned to the right */}
           <div className="text-center lg:text-left">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="text-lg font-bold mb-6">
               Cuidados abrangentes e serviços médicos
             </h2>
-            <p className="text-lg mb-8 opacity-90">
+            <p className="text-3xl md:text-4xl mb-8 opacity-90">
               Marque já a sua consulta e tenha acesso aos melhores cuidados de saúde do Algarve. 
               A nossa equipa está pronta para cuidar de si e da sua família.
             </p>
