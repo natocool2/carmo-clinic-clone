@@ -68,13 +68,15 @@ const AboutSection = () => {
                 alt="Dra. Rita - Medicarmo"
                 className="rounded-lg shadow-large w-full max-w-md mx-auto"
               />
-              {/* Logo overlay */}
-              <div className="absolute bottom-4 right-4 bg-white rounded-full p-2 shadow-lg">
-                <img
-                  src="/lovable-uploads/d36dd2e3-18fb-4842-9274-c053baf16eea.png"
-                  alt="Medicarmo Logo"
-                  className="w-20 h-20"
-                />
+              {/* Logo overlay - circular and centered bottom */}
+              <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 translate-y-1/2">
+                <div className="w-24 h-24 rounded-full overflow-hidden shadow-xl">
+                  <img
+                    src="/lovable-uploads/0342431a-1f0d-4687-bd65-8339fee12f0d.png"
+                    alt="Medicarmo Logo"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
             </div>
           </div>
