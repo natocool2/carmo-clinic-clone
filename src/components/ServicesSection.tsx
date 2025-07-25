@@ -12,7 +12,7 @@ const services = [
     number: "02.",
     title: "Clínica Geral",
     description: "Diagnóstico e tratamento de diversos tipos de doença, com prevenção e encaminhamento.",
-    image: "/lovable-uploads/831e5fea-94e3-48c5-abf9-992cb2119280.png"
+    image: "/lovable-uploads/1669256d-610b-4c01-bc69-496673e925be.png"
   },
   {
     number: "03.",
@@ -30,25 +30,25 @@ const services = [
     number: "05.",
     title: "Gastroenterologia",
     description: "Diagnóstico e tratamento de doenças do esófago, estômago, fígado, intestino, pâncreas.",
-    image: "/lovable-uploads/8325c665-3d9b-49f1-9a57-05a3e9188a43.png"
+    image: "/lovable-uploads/f2a789b8-bf65-494c-a1a3-832e9deb9751.png"
   },
   {
     number: "06.",
     title: "Ginecologia e Obstetrícia",
     description: "Diagnóstico e tratamento de doenças do sistema reprodutor feminino e cuidados relacionados com a gravidez.",
-    image: "/lovable-uploads/4a2f019d-fae8-405d-b727-80ba581fb605.png"
+    image: "/lovable-uploads/b556f0d2-3c80-489a-8c1b-d2eb35956a15.png"
   },
   {
     number: "07.",
     title: "Medicina Dentária",
     description: "Diagnóstico, tratamento e prevenção de doenças dos dentes, boca e estruturas associadas.",
-    image: "/lovable-uploads/64dcc295-9357-4346-82b9-72386cd1fda2.png"
+    image: "/lovable-uploads/da031c62-b48d-444c-bb5d-f2eb47d58b16.png"
   },
   {
     number: "08.",
     title: "Medicina Interna",
     description: "Diagnóstico e tratamento de doenças dos órgãos internos. Avaliação do paciente como um todo.",
-    image: "/lovable-uploads/e1dc3367-efac-4f58-a1c5-ba49a6444776.png"
+    image: "/lovable-uploads/f39da0a1-a4da-4dae-8a13-07a716341c7c.png"
   }
 ];
 
