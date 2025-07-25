@@ -1,105 +1,124 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Phone, Mail, MapPin } from "lucide-react";
+import { useForm } from "react-hook-form";
+
+interface ContactFormData {
+  name: string;
+  email: string;
+  phone: string;
+  message: string;
+}
 
 const ContactSection = () => {
+  const { register, handleSubmit, reset } = useForm<ContactFormData>();
+
+  const onSubmit = (data: ContactFormData) => {
+    console.log("Form submitted:", data);
+    // Handle form submission here
+    reset();
+  };
+
   return (
-    <section id="contact" className="py-20 bg-medicarmo-light-gray">
+    <section id="contact" className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+        {/* Header */}
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             Como encontrar-nos
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Visite-nos ou entre em contacto connosco
+          <p className="text-muted-foreground text-lg mb-8">
+            Faça marcação e visite-nos
           </p>
+          <Button 
+            asChild
+            className="bg-primary hover:bg-primary/90 text-white px-8"
+          >
+            <a href="#mapa">
+              <MapPin className="w-4 h-4 mr-2" />
+              Ver No Mapa
+            </a>
+          </Button>
         </div>
 
+        {/* Contact Info Bar */}
+        <div className="bg-primary text-white p-8 rounded-lg mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            {/* Address */}
+            <div className="flex flex-col items-center">
+              <MapPin className="w-8 h-8 mb-4" />
+              <h3 className="text-lg font-semibold mb-2">Endereço</h3>
+              <p className="text-sm opacity-90">
+                Largo do Carmo,77-2 B
+              </p>
+            </div>
+
+            {/* Phone */}
+            <div className="flex flex-col items-center">
+              <Phone className="w-8 h-8 mb-4" />
+              <h3 className="text-lg font-semibold mb-2">Telemóvel</h3>
+              <div className="text-sm opacity-90">
+                <p>(+351) 912 258 575</p>
+                <p>(+351) 289 889 560</p>
+                <p className="text-xs mt-1">*valor de uma chamada local</p>
+              </div>
+            </div>
+
+            {/* Email */}
+            <div className="flex flex-col items-center">
+              <Mail className="w-8 h-8 mb-4" />
+              <h3 className="text-lg font-semibold mb-2">Email</h3>
+              <p className="text-sm opacity-90">
+                medicarmo@gmail.com
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Form and Map */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Contact Information */}
-          <div className="space-y-6">
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-3">
-                  <Phone className="w-5 h-5 text-primary" />
-                  Telefone
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">+(351) 912 258 575</p>
-                <Button variant="link" asChild className="px-0">
-                  <a href="tel:00351912258575">Ligar agora</a>
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-3">
-                  <Mail className="w-5 h-5 text-primary" />
-                  Email
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">geral@medicarmo.pt</p>
-                <Button variant="link" asChild className="px-0">
-                  <a href="mailto:geral@medicarmo.pt">Enviar email</a>
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-3">
-                  <MapPin className="w-5 h-5 text-primary" />
-                  Morada
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Rua Dr. José de Matos, 8500 Portimão<br />
-                  Algarve, Portugal
-                </p>
-                <Button variant="link" asChild className="px-0">
-                  <a 
-                    href="https://www.google.com/maps?ll=37.019211,-7.934308&z=15&t=m&hl=en-US&gl=US&mapclient=embed&cid=11404537850832180447"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Ver no mapa
-                  </a>
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-3">
-                  <Clock className="w-5 h-5 text-primary" />
-                  Horários
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-2 text-muted-foreground">
-                  <div className="flex justify-between">
-                    <span>Segunda - Sexta:</span>
-                    <span>8:00 - 19:00</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Sábado:</span>
-                    <span>9:00 - 13:00</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Domingo:</span>
-                    <span>Fechado</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+          {/* Contact Form */}
+          <div id="marcacao">
+            <h3 className="text-2xl font-bold text-foreground mb-6">
+              Fazer Marcação
+            </h3>
+            <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+              <Input
+                {...register("name", { required: true })}
+                placeholder="Your Name"
+                className="w-full"
+              />
+              <Input
+                {...register("email", { required: true })}
+                type="email"
+                placeholder="Your Email"
+                className="w-full"
+              />
+              <Input
+                {...register("phone", { required: true })}
+                type="tel"
+                placeholder="Your Phone Number"
+                className="w-full"
+              />
+              <Textarea
+                {...register("message")}
+                placeholder="Message"
+                rows={6}
+                className="w-full resize-none"
+              />
+              <Button 
+                type="submit"
+                className="bg-primary hover:bg-primary/90 text-white px-8"
+              >
+                Send Request
+              </Button>
+            </form>
           </div>
 
           {/* Map */}
-          <div id="marcacao">
+          <div id="mapa">
             <Card className="h-full">
               <CardContent className="p-0 h-full min-h-[500px]">
                 <iframe
