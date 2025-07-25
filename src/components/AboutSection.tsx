@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Heart, Stethoscope, MapPin } from "lucide-react";
-import doctorPortrait from "@/assets/doctor-portrait.jpg";
+const doctorPortrait = "/lovable-uploads/2beb9e0b-ea73-4e93-a4de-664be6c48314.png";
 
 const AboutSection = () => {
   return (

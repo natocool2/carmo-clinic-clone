@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Calendar } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
+const heroBg = "/lovable-uploads/22451cb8-29a8-4573-9848-bcdc48d2c43a.png";
 
 const HeroSection = () => {
   return (

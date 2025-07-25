@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Phone, Calendar } from "lucide-react";
-import ctaBg from "@/assets/cta-bg.jpg";
+const ctaBg = "/lovable-uploads/f58dcb1a-10de-44a9-bcf2-80ad8af06f01.png";
 
 const CTASection = () => {
   return (
