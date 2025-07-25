@@ -77,12 +77,53 @@ const ServicesSection = () => {
             </p>
           </div>
 
-          {/* Services Grid */}
+          {/* Services Grid - 3x3 layout */}
           <div className="lg:col-span-2">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {services.map((service, index) => (
+            <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
+              {/* First row - spans 2 cards */}
+              <div 
+                className="relative h-48 rounded-lg overflow-hidden group cursor-pointer"
+                style={{
+                  backgroundImage: `url(${services[0].image})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center"
+                }}
+              >
+                <div className="absolute inset-0 bg-black/60 group-hover:bg-black/70 transition-colors"></div>
+                <div className="relative z-10 p-6 h-full flex flex-col justify-end text-white">
+                  <div className="space-y-2">
+                    <div className="text-sm font-medium opacity-80">{services[0].number}</div>
+                    <h3 className="font-semibold text-lg">{services[0].title}</h3>
+                    <p className="text-sm opacity-90 leading-relaxed">{services[0].description}</p>
+                  </div>
+                </div>
+              </div>
+
+              <div 
+                className="relative h-48 rounded-lg overflow-hidden group cursor-pointer"
+                style={{
+                  backgroundImage: `url(${services[1].image})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center"
+                }}
+              >
+                <div className="absolute inset-0 bg-black/60 group-hover:bg-black/70 transition-colors"></div>
+                <div className="relative z-10 p-6 h-full flex flex-col justify-end text-white">
+                  <div className="space-y-2">
+                    <div className="text-sm font-medium opacity-80">{services[1].number}</div>
+                    <h3 className="font-semibold text-lg">{services[1].title}</h3>
+                    <p className="text-sm opacity-90 leading-relaxed">{services[1].description}</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Empty space for first row third column */}
+              <div className="hidden lg:block"></div>
+
+              {/* Second row - 4 cards spanning 3 columns */}
+              {services.slice(2, 6).map((service, index) => (
                 <div 
-                  key={index}
+                  key={index + 2}
                   className="relative h-48 rounded-lg overflow-hidden group cursor-pointer"
                   style={{
                     backgroundImage: `url(${service.image})`,
@@ -90,10 +131,29 @@ const ServicesSection = () => {
                     backgroundPosition: "center"
                   }}
                 >
-                  {/* Overlay */}
                   <div className="absolute inset-0 bg-black/60 group-hover:bg-black/70 transition-colors"></div>
-                  
-                  {/* Content */}
+                  <div className="relative z-10 p-6 h-full flex flex-col justify-end text-white">
+                    <div className="space-y-2">
+                      <div className="text-sm font-medium opacity-80">{service.number}</div>
+                      <h3 className="font-semibold text-lg">{service.title}</h3>
+                      <p className="text-sm opacity-90 leading-relaxed">{service.description}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+
+              {/* Third row - 2 services + contact card */}
+              {services.slice(6, 8).map((service, index) => (
+                <div 
+                  key={index + 6}
+                  className="relative h-48 rounded-lg overflow-hidden group cursor-pointer"
+                  style={{
+                    backgroundImage: `url(${service.image})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center"
+                  }}
+                >
+                  <div className="absolute inset-0 bg-black/60 group-hover:bg-black/70 transition-colors"></div>
                   <div className="relative z-10 p-6 h-full flex flex-col justify-end text-white">
                     <div className="space-y-2">
                       <div className="text-sm font-medium opacity-80">{service.number}</div>
@@ -104,8 +164,8 @@ const ServicesSection = () => {
                 </div>
               ))}
               
-              {/* Contact Card */}
-              <div className="relative h-48 rounded-lg overflow-hidden bg-primary text-white p-6 flex flex-col justify-center">
+              {/* Contact Card - rounded right edge */}
+              <div className="relative h-48 rounded-lg rounded-r-[60px] overflow-hidden bg-primary text-white p-6 flex flex-col justify-center">
                 <div className="space-y-4">
                   <div className="flex items-center gap-2">
                     <Phone className="w-5 h-5" />
