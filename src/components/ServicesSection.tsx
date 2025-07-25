@@ -90,7 +90,7 @@ const ServicesSection = () => {
               }}
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/70 transition-colors"></div>
-              <div className="relative z-10 p-6 h-full flex flex-col justify-end text-white">
+              <div className="relative z-10 p-6 h-full flex flex-col justify-start text-white">
                 <div className="space-y-2">
                   <div className="text-sm font-medium opacity-80">{service.number}</div>
                   <h3 className="font-semibold text-lg">{service.title}</h3>
@@ -112,7 +112,7 @@ const ServicesSection = () => {
               }}
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/70 transition-colors"></div>
-              <div className="relative z-10 p-6 h-full flex flex-col justify-end text-white">
+              <div className="relative z-10 p-6 h-full flex flex-col justify-start text-white">
                 <div className="space-y-2">
                   <div className="text-sm font-medium opacity-80">{service.number}</div>
                   <h3 className="font-semibold text-lg">{service.title}</h3>
@@ -134,7 +134,7 @@ const ServicesSection = () => {
               }}
             >
               <div className="absolute inset-0 bg-black/60 group-hover:bg-black/70 transition-colors"></div>
-              <div className="relative z-10 p-6 h-full flex flex-col justify-end text-white">
+              <div className="relative z-10 p-6 h-full flex flex-col justify-start text-white">
                 <div className="space-y-2">
                   <div className="text-sm font-medium opacity-80">{service.number}</div>
                   <h3 className="font-semibold text-lg">{service.title}</h3>
