@@ -9,7 +9,7 @@ const HealthCTASection = () => {
           {/* Image Section */}
           <div className="relative">
             <img 
-              src="/lovable-uploads/f9a4bf6b-bf2f-4c16-b1c2-baa09bcd60c7.png"
+              src="/lovable-uploads/15dc769c-c1c2-4c70-8d83-141a9ee0c1cc.png"
               alt="Profissional de saúde"
               className="w-full h-auto object-cover rounded-lg"
             />
