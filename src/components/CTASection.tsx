@@ -23,7 +23,7 @@ const CTASection = () => {
           
           {/* Content aligned to the right */}
           <div className="text-center lg:text-left">
-            <p className="text-base mb-4 opacity-90">
+            <p className="text-lg mb-4 opacity-90">
               Invista na sua saúde hoje!
             </p>
             <h2 className="text-xl md:text-2xl font-bold mb-8">
