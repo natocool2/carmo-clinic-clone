@@ -33,9 +33,10 @@ const TestimonialsSection = () => {
   return (
     <section className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-          {/* Title Section */}
-          <div className="lg:col-span-1">
+        {/* Primeira linha: Título + 2 cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+          {/* Título na primeira coluna */}
+          <div className="flex flex-col justify-center">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
               Testemunhos
             </h2>
@@ -44,31 +45,55 @@ const TestimonialsSection = () => {
             </p>
           </div>
 
-          {/* Testimonials Grid */}
-          <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-6">
-            {testimonials.map((testimonial, index) => (
-              <Card key={index} className="bg-white hover:shadow-lg transition-shadow relative">
-                <CardContent className="p-6">
-                  <Quote className="w-8 h-8 text-primary mb-4" />
-                  <p className="text-muted-foreground mb-6 italic leading-relaxed">
-                    {testimonial.text}
-                  </p>
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full overflow-hidden bg-muted">
-                      <img 
-                        src={testimonial.avatar} 
-                        alt={testimonial.name}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                    <div className="font-semibold text-foreground">
-                      {testimonial.name}
-                    </div>
+          {/* Primeiros 2 testemunhos */}
+          {testimonials.slice(0, 2).map((testimonial, index) => (
+            <Card key={index} className="bg-white hover:shadow-lg transition-shadow relative">
+              <CardContent className="p-6">
+                <Quote className="w-8 h-8 text-primary mb-4" />
+                <p className="text-muted-foreground mb-6 italic leading-relaxed">
+                  {testimonial.text}
+                </p>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full overflow-hidden bg-muted">
+                    <img 
+                      src={testimonial.avatar} 
+                      alt={testimonial.name}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+                  <div className="font-semibold text-foreground">
+                    {testimonial.name}
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+
+        {/* Segunda linha: 3 cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {testimonials.slice(2, 5).map((testimonial, index) => (
+            <Card key={index + 2} className="bg-white hover:shadow-lg transition-shadow relative">
+              <CardContent className="p-6">
+                <Quote className="w-8 h-8 text-primary mb-4" />
+                <p className="text-muted-foreground mb-6 italic leading-relaxed">
+                  {testimonial.text}
+                </p>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full overflow-hidden bg-muted">
+                    <img 
+                      src={testimonial.avatar} 
+                      alt={testimonial.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="font-semibold text-foreground">
+                    {testimonial.name}
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </div>
     </section>
