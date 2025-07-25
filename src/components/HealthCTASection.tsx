@@ -15,8 +15,8 @@ const HealthCTASection = () => {
         </div>
       </div>
       
-      {/* Blue/Purple Overlay - Smooth transition from transparent to opaque */}
-      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-600/20 via-blue-600/60 via-blue-600/85 to-blue-600/95"></div>
+      {/* Blue/Purple Overlay - Ultra smooth transition */}
+      <div className="absolute inset-0 bg-gradient-to-r from-transparent from-10% via-blue-600/10 via-blue-600/25 via-blue-600/45 via-blue-600/65 via-blue-600/80 to-blue-600/95 to-90%"></div>
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4">
