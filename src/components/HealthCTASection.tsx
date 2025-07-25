@@ -19,14 +19,14 @@ const HealthCTASection = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-transparent from-10% via-blue-600/10 via-blue-600/25 via-blue-600/45 via-blue-600/65 via-blue-600/80 to-blue-600/95 to-90%"></div>
       
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="relative z-10 w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[500px]">
           {/* Empty space for image - Left */}
           <div className="relative animate-fade-in">
           </div>
           
           {/* Content Section - Right */}
-          <div className="text-white space-y-6 animate-fade-in">
+          <div className="text-white space-y-6 animate-fade-in px-4 lg:px-8">
             <div className="space-y-4">
               <p className="text-lg opacity-90">Invista na sua saúde hoje!</p>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
