@@ -42,7 +42,7 @@ const services = [
     number: "07.",
     title: "Medicina Dentária",
     description: "Diagnóstico, tratamento e prevenção de doenças dos dentes, boca e estruturas associadas.",
-    image: "/lovable-uploads/da031c62-b48d-444c-bb5d-f2eb47d58b16.png"
+    image: "/lovable-uploads/11232eb6-a8ea-443a-a641-b2fee79f4d33.png"
   },
   {
     number: "08.",
