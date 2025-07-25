@@ -18,7 +18,7 @@ const services = [
     number: "03.",
     title: "Dermatologia",
     description: "Diagnóstico e tratamento de doenças de pele, cabelo, unhas e doenças venéreas.",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
+    image: "/lovable-uploads/731a8486-4546-4ea3-9cc1-beb089cfccc3.png"
   },
   {
     number: "04.",
