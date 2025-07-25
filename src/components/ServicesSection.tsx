@@ -145,7 +145,7 @@ const ServicesSection = () => {
           ))}
           
           {/* Contact Card spanning 2 columns */}
-          <div className="col-span-2 relative h-48 rounded-lg rounded-r-[60px] overflow-hidden bg-primary text-white p-6 flex flex-col justify-start">
+          <div className="col-span-2 relative h-48 rounded-lg overflow-hidden bg-primary text-white p-6 flex flex-col justify-start">
             <div className="space-y-4">
               <div className="flex items-center gap-2">
                 <Phone className="w-5 h-5" />
