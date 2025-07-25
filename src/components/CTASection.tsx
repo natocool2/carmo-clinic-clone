@@ -32,9 +32,8 @@ const CTASection = () => {
             <div className="flex justify-center lg:justify-start">
               <Button
                 size="lg"
-                variant="outline"
                 asChild
-                className="border-white text-white hover:bg-white hover:text-primary"
+                className="bg-white text-primary hover:bg-white/90"
               >
                 <a href="#marcacao" className="inline-flex items-center gap-2">
                   <Calendar className="w-5 h-5" />
