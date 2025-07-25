@@ -4,27 +4,25 @@ import { Calendar } from "lucide-react";
 const HealthCTASection = () => {
   return (
     <section className="relative py-20 overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute inset-0">
-        <img 
-          src="/lovable-uploads/15dc769c-c1c2-4c70-8d83-141a9ee0c1cc.png"
-          alt="Profissional de saúde"
-          className="w-full h-full object-cover"
-        />
-        {/* Blue/Purple Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/90 via-blue-500/85 to-purple-600/90"></div>
+      {/* Image positioned from center to left, behind overlay */}
+      <div className="absolute inset-0 flex justify-center">
+        <div className="relative w-full max-w-7xl">
+          <img 
+            src="/lovable-uploads/15dc769c-c1c2-4c70-8d83-141a9ee0c1cc.png"
+            alt="Profissional de saúde"
+            className="absolute left-0 top-0 h-full w-1/2 object-cover object-center"
+          />
+        </div>
       </div>
+      
+      {/* Blue/Purple Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-600/90 via-blue-500/85 to-purple-600/90"></div>
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Image Section - Left */}
+          {/* Empty space for image - Left */}
           <div className="relative animate-fade-in">
-            <img 
-              src="/lovable-uploads/15dc769c-c1c2-4c70-8d83-141a9ee0c1cc.png"
-              alt="Profissional de saúde"
-              className="w-full h-auto object-cover rounded-lg opacity-90"
-            />
           </div>
           
           {/* Content Section - Right */}
