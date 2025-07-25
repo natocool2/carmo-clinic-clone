@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import medicarmoLogo from "@/assets/medicarmo-logo.png";
+const medicarmoLogo = "/lovable-uploads/d36dd2e3-18fb-4842-9274-c053baf16eea.png";
 
 const Header = () => {
   return (
