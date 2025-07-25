@@ -26,7 +26,7 @@ const CTASection = () => {
             <p className="text-base mb-4 opacity-90">
               Invista na sua saúde hoje!
             </p>
-            <h2 className="text-xl md:text-2xl font-bold mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold mb-8">
               Cuidados abrangentes e serviços médicos especializados para o manter no seu melhor
             </h2>
             <div className="flex justify-center lg:justify-start">
