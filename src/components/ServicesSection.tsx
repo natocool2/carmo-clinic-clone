@@ -6,7 +6,7 @@ const services = [
     number: "01.",
     title: "Análises Clínicas",
     description: "Serviço de testes diagnósticos e análises abrangentes.",
-    image: "https://images.unsplash.com/premium_photo-1664477117399-4e2e5af26deb"
+    image: "/lovable-uploads/661c1721-991d-4564-816a-c9ec46ab18b6.png"
   },
   {
     number: "02.",
