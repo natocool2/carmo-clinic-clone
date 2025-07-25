@@ -24,7 +24,7 @@ const services = [
     number: "04.",
     title: "Endocrinologia",
     description: "Diagnóstico e tratamento de desequilíbrios hormonais, incluindo diabetes e tiroide, hipófise, e disfunção adrenal.",
-    image: "https://images.unsplash.com/premium_photo-1661779717978-d7937fa08250"
+    image: "/lovable-uploads/b3f85eca-e6b5-49df-bee7-bf818de67118.png"
   },
   {
     number: "05.",
