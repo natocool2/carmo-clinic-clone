@@ -190,8 +190,8 @@ All colors MUST be HSL. Based on Medicarmo brand colors.
 
   .logo-medicarmo {
     position: absolute;
-    bottom: -240px;
-    left: -130px;
+    bottom: -210px;
+    left: -180px;
     width: 440px;
     padding: 20px;
     z-index: 10;
