@@ -16,8 +16,9 @@ const TrustSection = () => {
         className="absolute inset-0 opacity-20"
         style={{
           backgroundImage: `url(/lovable-uploads/ebfabf12-1ce3-477e-b5a1-a91845a69cf7.png)`,
-          backgroundRepeat: "repeat",
-          backgroundSize: "80px 80px",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "400px 400px",
+          backgroundPosition: "center",
           zIndex: 5
         }}
       ></div>
