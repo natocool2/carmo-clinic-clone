@@ -31,8 +31,19 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   return (
-    <section className="py-20 bg-muted/30">
-      <div className="container mx-auto px-4">
+    <section className="py-20 bg-muted/30 relative overflow-hidden">
+      {/* Background pattern */}
+      <div 
+        className="absolute inset-0 opacity-20"
+        style={{
+          backgroundImage: `url(/lovable-uploads/a036febb-9103-4037-b195-5517a7c73458.png)`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "400px 400px",
+          backgroundPosition: "right top"
+        }}
+      ></div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         {/* Primeira linha: Título + 2 cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Título na primeira coluna */}
