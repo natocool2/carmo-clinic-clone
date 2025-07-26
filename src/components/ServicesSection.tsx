@@ -65,6 +65,17 @@ const ServicesSection = () => {
         }}
       ></div>
       
+      {/* New pattern image */}
+      <div 
+        className="absolute inset-0 opacity-15"
+        style={{
+          backgroundImage: `url(/lovable-uploads/22f0ca5f-8e43-4bd3-a05a-8c379a0e8d7f.png)`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "400px 400px",
+          backgroundPosition: "center"
+        }}
+      ></div>
+      
       <div className="container mx-auto px-4 relative z-10">
         {/* 3 rows x 4 columns grid */}
         <div className="grid grid-cols-4" style={{ gap: '3px' }}>
