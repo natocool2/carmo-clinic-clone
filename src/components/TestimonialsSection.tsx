@@ -15,7 +15,7 @@ const testimonials = [
   {
     name: "Maria da Silva",
     text: "Os médicos e enfermeiros foram capazes de diagnosticar e tratar o meu estado de forma rápida e eficaz graças às ferramentas avançadas à sua disposição.",
-    avatar: "/lovable-uploads/22451cb8-29a8-4573-9848-bcdc48d2c43a.png"
+    avatar: "/lovable-uploads/0a7671c7-a662-44d7-b5ed-fd7ba4f9e8f2.png"
   },
   {
     name: "José Gonçalves",
