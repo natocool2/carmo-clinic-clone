@@ -13,14 +13,16 @@ const ClinicSection = () => {
         }}
       ></div>
       
-      {/* Pattern image covering the blue area */}
+      {/* Pattern image at bottom right of blue area */}
       <div 
-        className="absolute inset-0 opacity-20"
+        className="absolute bottom-0 right-0"
         style={{
+          width: '326px',
+          height: '218px',
           marginRight: '258px',
           backgroundImage: `url(/lovable-uploads/eceaa431-4dfd-4a79-a98a-2db2a005d741.png)`,
-          backgroundRepeat: "repeat",
-          backgroundSize: "50px 50px",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "contain",
           zIndex: 5
         }}
       ></div>
