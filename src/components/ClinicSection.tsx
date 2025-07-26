@@ -4,18 +4,17 @@ import { Calendar, Phone } from "lucide-react";
 const ClinicSection = () => {
   return (
     <section className="py-12 bg-background relative overflow-hidden">
-      {/* Blue area that doesn't go to the end */}
+      {/* Blue area - full width on mobile, partial on desktop */}
       <div 
-        className="absolute inset-0 bg-primary"
+        className="absolute inset-0 bg-primary lg:mr-64"
         style={{
-          marginRight: '258px',
           zIndex: 1
         }}
       ></div>
       
-      {/* Pattern image at bottom right of blue area */}
+      {/* Pattern image at bottom right of blue area - hidden on mobile */}
       <div 
-        className="absolute bottom-[55px] right-0"
+        className="hidden lg:block absolute bottom-[55px] right-0"
         style={{
           width: '326px',
           height: '218px',
@@ -52,15 +51,15 @@ const ClinicSection = () => {
             </div>
           </div>
 
-          {/* CTA Button - positioned within blue area */}
-          <div className="absolute right-0" style={{ marginRight: '308px' }}>
+          {/* CTA Button - responsive positioning */}
+          <div className="mt-8 lg:absolute lg:right-0 lg:mr-80">
             <Button
               size="lg"
               variant="secondary"
-              className="bg-white text-primary hover:bg-gray-100 font-semibold px-8 py-4 shadow-lg"
+              className="bg-white text-primary hover:bg-gray-100 font-semibold px-8 py-4 shadow-lg w-full lg:w-auto"
               asChild
             >
-              <a href="#marcacao" className="inline-flex items-center gap-2">
+              <a href="#marcacao" className="inline-flex items-center gap-2 justify-center">
                 <Calendar className="w-5 h-5" />
                 Fazer Marcação
               </a>
