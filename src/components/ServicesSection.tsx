@@ -93,7 +93,7 @@ const ServicesSection = () => {
           {services.slice(0, 2).map((service, index) => (
             <div 
               key={index}
-              className="relative h-48 overflow-hidden group cursor-pointer card-shadow"
+              className="relative aspect-square overflow-hidden group cursor-pointer card-shadow"
               style={{
                 backgroundImage: `url(${service.image})`,
                 backgroundSize: "cover",
@@ -115,7 +115,7 @@ const ServicesSection = () => {
           {services.slice(2, 6).map((service, index) => (
             <div 
               key={index + 2}
-              className="relative h-48 overflow-hidden group cursor-pointer card-shadow"
+              className="relative aspect-square overflow-hidden group cursor-pointer card-shadow"
               style={{
                 backgroundImage: `url(${service.image})`,
                 backgroundSize: "cover",
@@ -137,7 +137,7 @@ const ServicesSection = () => {
           {services.slice(6, 8).map((service, index) => (
             <div 
               key={index + 6}
-              className="relative h-48 overflow-hidden group cursor-pointer card-shadow"
+              className="relative aspect-square overflow-hidden group cursor-pointer card-shadow"
               style={{
                 backgroundImage: `url(${service.image})`,
                 backgroundSize: "cover",
@@ -156,7 +156,7 @@ const ServicesSection = () => {
           ))}
           
           {/* Contact Card spanning 2 columns */}
-          <div className="col-span-2 relative h-48 overflow-hidden caixa-servicos flex flex-col justify-start">
+          <div className="col-span-2 relative aspect-[2:1] overflow-hidden caixa-servicos flex flex-col justify-start">
             <div className="space-y-4">
               <div className="flex items-center gap-2">
                 <Phone className="w-5 h-5" />
