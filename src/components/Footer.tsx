@@ -13,7 +13,7 @@ const Footer = () => {
               <img
                 src={medicarmoLogo}
                 alt="Medicarmo"
-                className="h-12 w-12"
+                className="h-16 w-16"
               />
             </div>
 
