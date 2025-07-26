@@ -173,6 +173,7 @@ All colors MUST be HSL. Based on Medicarmo brand colors.
     display: block;
     z-index: 1;
     position: relative;
+    transform: translateX(70px);
   }
 
   .decoracao-quadrados {
