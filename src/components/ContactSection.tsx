@@ -78,9 +78,9 @@ const ContactSection = () => {
         </div>
 
         {/* Form and Map */}
-        <div className="grid grid-cols-1 lg:grid-cols-2" style={{ marginTop: '30px', marginLeft: '25px' }}>
+        <div className="grid grid-cols-1 lg:grid-cols-2 mt-8 mx-4 lg:mx-6">
           {/* Contact Form with white background */}
-          <div id="marcacao" className="bg-white p-8 form-shadow" style={{ marginLeft: '-25px', marginTop: '-30px', borderBottomLeftRadius: '0.5rem' }}>
+          <div id="marcacao" className="bg-white p-6 lg:p-8 form-shadow -mt-8 lg:-ml-6 rounded-bl-lg">
             <h3 className="text-2xl font-bold text-foreground mb-6">
               Fazer Marcação
             </h3>
@@ -118,14 +118,14 @@ const ContactSection = () => {
           </div>
 
           {/* Map */}
-          <div id="mapa" style={{ marginTop: '-30px' }}>
+          <div id="mapa" className="-mt-8 lg:mt-0">
             <Card className="h-full map-shadow">
-              <CardContent className="p-0 h-full min-h-[500px]">
+              <CardContent className="p-0 h-full min-h-[300px] lg:min-h-[500px]">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.123456789!2d-7.934308!3d37.019211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDAxJzA5LjIiTiA3wrA1NicwMy41Ilc!5e0!3m2!1sen!2spt!4v1234567890"
                   width="100%"
                   height="100%"
-                  style={{ border: 0, borderRadius: "0 0.5rem 0.5rem 0" }}
+                  className="border-0 rounded-br-lg lg:rounded-r-lg"
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"

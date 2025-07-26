@@ -77,10 +77,10 @@ const ServicesSection = () => {
       ></div>
       
       <div className="container mx-auto px-4 relative z-10">
-        {/* 3 rows x 4 columns grid */}
-        <div className="grid grid-cols-4" style={{ gap: '3px', padding: '0 75px' }}>
-          {/* First row - Header text (2 cols) + 2 cards */}
-          <div className="col-span-2 space-y-6 flex flex-col justify-center" style={{ transform: 'translateY(-20px)' }}>
+        {/* Responsive grid layout */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 px-4 md:px-8 lg:px-16">
+          {/* First row - Header text (responsive spans) */}
+          <div className="col-span-1 md:col-span-2 space-y-6 flex flex-col justify-center transform -translate-y-0 md:-translate-y-5">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
               Serviços médicos especializados
             </h2>
@@ -155,8 +155,8 @@ const ServicesSection = () => {
             </div>
           ))}
           
-          {/* Contact Card spanning 2 columns */}
-          <div className="col-span-2 relative aspect-[2:1] overflow-hidden caixa-servicos flex flex-col justify-start">
+          {/* Contact Card spanning responsive columns */}
+          <div className="col-span-1 md:col-span-2 relative aspect-square md:aspect-[2:1] overflow-hidden caixa-servicos flex flex-col justify-start">
             <div className="space-y-4">
               <div className="flex items-center gap-2">
                 <Phone className="w-5 h-5" />
