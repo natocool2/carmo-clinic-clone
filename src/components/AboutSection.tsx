@@ -76,7 +76,7 @@ const AboutSection = () => {
               {/* Logo at bottom */}
               <div className="logo-medicarmo">
                 <img
-                  src="/lovable-uploads/055ce441-bf32-42ef-ba29-190561985d89.png"
+                  src="/lovable-uploads/652052fc-1be2-49e7-8448-c2ee2fc6135a.png"
                   alt="Medicarmo Logo"
                 />
               </div>
