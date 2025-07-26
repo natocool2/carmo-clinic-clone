@@ -1,4 +1,5 @@
 import { Phone, Smile, Handshake, Building2 } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
 
 const steps = [
   {
@@ -40,19 +41,21 @@ const HealthStepsSection = () => {
           {steps.map((step, index) => {
             const IconComponent = step.icon;
             return (
-              <div key={index} className="text-center space-y-4">
-                <div className="flex justify-center">
-                  <div className="w-16 h-16 bg-primary rounded-lg flex items-center justify-center">
-                    <IconComponent className="w-8 h-8 text-white" />
+              <Card key={index} className="bg-card border-0 shadow-sm">
+                <CardContent className="p-8 text-center space-y-4">
+                  <div className="flex justify-center">
+                    <div className="w-16 h-16 bg-primary rounded-lg flex items-center justify-center">
+                      <IconComponent className="w-8 h-8 text-white" />
+                    </div>
                   </div>
-                </div>
-                <h3 className="text-lg font-semibold text-foreground">
-                  {step.title}
-                </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
-                  {step.description}
-                </p>
-              </div>
+                  <h3 className="text-lg font-semibold text-foreground">
+                    {step.title}
+                  </h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    {step.description}
+                  </p>
+                </CardContent>
+              </Card>
             );
           })}
         </div>
