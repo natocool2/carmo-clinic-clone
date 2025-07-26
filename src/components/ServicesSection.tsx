@@ -69,7 +69,7 @@ const ServicesSection = () => {
         {/* 3 rows x 4 columns grid */}
         <div className="grid grid-cols-4" style={{ gap: '3px' }}>
           {/* First row - Header text (2 cols) + 2 cards */}
-          <div className="col-span-2 space-y-6 flex flex-col justify-center">
+          <div className="col-span-2 space-y-6 flex flex-col justify-center" style={{ transform: 'translateY(-20px)' }}>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
               Serviços médicos especializados
             </h2>
