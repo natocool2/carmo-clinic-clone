@@ -20,7 +20,7 @@ const testimonials = [
   {
     name: "José Gonçalves",
     text: "Muito satisfeito com a variedade de serviços oferecidos na vossa clínica. Desde check-ups de rotina a tratamentos especializados, a vossa clínica tem isso tudo!",
-    avatar: "/lovable-uploads/36279678-d9bc-4a4a-ac7a-b9994a66f05a.png"
+    avatar: "/lovable-uploads/c5469269-13ba-4f5a-8578-8f41cc5e2b48.png"
   },
   {
     name: "Sofia Martins",
