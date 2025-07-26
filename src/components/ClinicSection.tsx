@@ -21,7 +21,7 @@ const ClinicSection = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               No nosso centro clínico
             </h2>
-            <p className="text-lg mb-8 opacity-90 leading-relaxed">
+            <p className="text-base mb-8 opacity-90 leading-relaxed">
               Dedicamo-nos a fornecer cuidados de saúde de alta qualidade a todos os nossos pacientes. As nossas instalações de última geração e pessoal experiente asseguram-lhe que receberá os melhores cuidados possíveis. Para marcar uma consulta, basta telefonar-nos ou preencher o formulário no nosso website para marcar uma hora que seja conveniente para si.
             </p>
             
