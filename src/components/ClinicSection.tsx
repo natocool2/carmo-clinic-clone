@@ -6,8 +6,9 @@ const ClinicSection = () => {
     <section className="py-20 bg-background relative overflow-hidden">
       {/* Blue area that doesn't go to the end */}
       <div 
-        className="absolute inset-0 mr-32 bg-primary"
+        className="absolute inset-0 bg-primary"
         style={{
+          marginRight: '58px',
           backgroundImage: `url(/lovable-uploads/36279678-d9bc-4a4a-ac7a-b9994a66f05a.png)`,
           backgroundRepeat: "repeat",
           backgroundSize: "50px 50px"
