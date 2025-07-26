@@ -118,7 +118,7 @@ const ContactSection = () => {
           </div>
 
           {/* Map */}
-          <div id="mapa">
+          <div id="mapa" style={{ marginTop: '-30px' }}>
             <Card className="h-full">
               <CardContent className="p-0 h-full min-h-[500px]">
                 <iframe
