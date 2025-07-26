@@ -167,7 +167,7 @@ All colors MUST be HSL. Based on Medicarmo brand colors.
   }
 
   .imagem-medica {
-    width: 100%;
+    width: 60%;
     height: auto;
     display: block;
     z-index: 1;
