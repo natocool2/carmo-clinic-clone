@@ -5,7 +5,7 @@ const testimonials = [
   {
     name: "João Rodrigues",
     text: "Fiquei impressionado com o profissionalismo e os cuidados que recebi na clínica. O pessoal era simpático e conhecedor, e as instalações eram limpas e modernas. Recomendaria vivamente a qualquer pessoa que necessitasse de serviços médicos.",
-    avatar: "/lovable-uploads/b556f0d2-3c80-489a-8c1b-d2eb35956a15.png"
+    avatar: "/lovable-uploads/485330c7-a200-4fb9-b801-c6b5fd065657.png"
   },
   {
     name: "Carlos Pereira",
