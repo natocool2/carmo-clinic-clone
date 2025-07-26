@@ -156,3 +156,52 @@ All colors MUST be HSL. Based on Medicarmo brand colors.
     z-index: 2;
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
   }
+
+  /* Custom styles for AboutSection card effect */
+  .card-container {
+    position: relative;
+    width: 500px;
+    height: auto;
+    background-color: #F7F9FC;
+    overflow: hidden;
+  }
+
+  .imagem-medica {
+    width: 100%;
+    height: auto;
+    display: block;
+    z-index: 1;
+    position: relative;
+  }
+
+  .decoracao-quadrados {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 120px;
+    background-image: radial-gradient(#BFD6ED 1.5px, transparent 1.5px);
+    background-size: 20px 20px;
+    z-index: 2;
+    opacity: 0.5;
+  }
+
+  .logo-medicarmo {
+    position: absolute;
+    bottom: -20px;
+    left: 20px;
+    width: 220px;
+    background-color: #7CB7E3;
+    border-bottom-left-radius: 100% 60%;
+    border-bottom-right-radius: 100% 60%;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    z-index: 3;
+    text-align: center;
+  }
+
+  .logo-medicarmo img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }

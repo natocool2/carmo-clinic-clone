@@ -60,23 +60,25 @@ const AboutSection = () => {
             </Button>
           </div>
 
-          {/* Image */}
-          <div className="relative">
-            <div className="relative">
+          {/* Image with decorative effect */}
+          <div className="relative flex justify-center">
+            <div className="card-container">
+              {/* Decorative blue squares */}
+              <div className="decoracao-quadrados"></div>
+              
+              {/* Main medical image */}
               <img
                 src={doctorPortrait}
                 alt="Dra. Rita - Medicarmo"
-                className="rounded-lg shadow-large w-full max-w-md mx-auto"
+                className="imagem-medica"
               />
-              {/* Logo overlay - positioned left side like in the original */}
-              <div className="absolute bottom-8 left-4 transform -translate-x-1/4">
-                <div className="w-28 h-28 rounded-full overflow-hidden shadow-xl border-4 border-white">
-                  <img
-                    src="/lovable-uploads/0342431a-1f0d-4687-bd65-8339fee12f0d.png"
-                    alt="Medicarmo Logo"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+              
+              {/* Logo at bottom */}
+              <div className="logo-medicarmo">
+                <img
+                  src="/lovable-uploads/0342431a-1f0d-4687-bd65-8339fee12f0d.png"
+                  alt="Medicarmo Logo"
+                />
               </div>
             </div>
           </div>
