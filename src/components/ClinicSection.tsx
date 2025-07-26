@@ -12,6 +12,17 @@ const ClinicSection = () => {
         }}
       ></div>
       
+      {/* Pattern image at bottom right of blue area */}
+      <div 
+        className="absolute bottom-0 right-0 w-48 h-32 opacity-20"
+        style={{
+          marginRight: '258px',
+          backgroundImage: `url(/lovable-uploads/eceaa431-4dfd-4a79-a98a-2db2a005d741.png)`,
+          backgroundRepeat: "repeat",
+          backgroundSize: "contain"
+        }}
+      ></div>
+      
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
