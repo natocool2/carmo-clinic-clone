@@ -19,7 +19,7 @@ const ClinicSection = () => {
         style={{
           width: '326px',
           height: '218px',
-          marginRight: '158px',
+          marginRight: '78px',
           backgroundImage: `url(/lovable-uploads/eceaa431-4dfd-4a79-a98a-2db2a005d741.png)`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "contain",
