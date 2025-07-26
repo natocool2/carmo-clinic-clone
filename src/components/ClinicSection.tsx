@@ -15,11 +15,11 @@ const ClinicSection = () => {
       
       {/* Pattern image at bottom right of blue area */}
       <div 
-        className="absolute bottom-0 right-0"
+        className="absolute bottom-[30px] right-0"
         style={{
           width: '326px',
           height: '218px',
-          marginRight: '258px',
+          marginRight: '158px',
           backgroundImage: `url(/lovable-uploads/eceaa431-4dfd-4a79-a98a-2db2a005d741.png)`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "contain",
