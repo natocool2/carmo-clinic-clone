@@ -28,10 +28,6 @@ const Header = () => {
             <a
               href="#servicos"
               className="text-white hover:text-primary transition-colors font-medium"
-              onClick={(e) => {
-                e.preventDefault();
-                document.getElementById('servicos')?.scrollIntoView({ behavior: 'smooth' });
-              }}
             >
               Serviços
             </a>
