@@ -8,7 +8,7 @@ All colors MUST be HSL. Based on Medicarmo brand colors.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 210 44% 98%;
     --foreground: 210 7% 10%;
 
     --card: 0 0% 100%;
