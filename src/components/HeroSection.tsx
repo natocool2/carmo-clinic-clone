@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Calendar } from "lucide-react";
+import { useState } from "react";
 const heroBg = "/lovable-uploads/22451cb8-29a8-4573-9848-bcdc48d2c43a.png";
 
 const HeroSection = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   return (
     <section
       className="relative min-h-screen flex items-center justify-center text-center text-white"
@@ -69,7 +71,10 @@ const HeroSection = () => {
             </div>
 
             {/* Mobile Menu Button */}
-            <button className="md:hidden p-2 text-white">
+            <button 
+              className="md:hidden p-2 text-white"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
               <svg
                 className="w-6 h-6"
                 fill="none"
@@ -80,11 +85,52 @@ const HeroSection = () => {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
+                  d={isMobileMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
                 />
               </svg>
             </button>
           </div>
+          
+          {/* Mobile Menu */}
+          {isMobileMenuOpen && (
+            <div className="md:hidden bg-black/90 backdrop-blur border-t border-white/20">
+              <nav className="container mx-auto px-4 py-4 space-y-4">
+                <a
+                  href="#sobre"
+                  className="block text-white hover:text-primary transition-colors font-medium py-2"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Sobre
+                </a>
+                <a
+                  href="#servicos"
+                  className="block text-white hover:text-primary transition-colors font-medium py-2"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Serviços
+                </a>
+                <a
+                  href="#marcacao"
+                  className="block text-white hover:text-primary transition-colors font-medium py-2"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Ver no Mapa
+                </a>
+                <a
+                  href="#contact"
+                  className="block text-white hover:text-primary transition-colors font-medium py-2"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Contactar-nos
+                </a>
+                <Button className="w-full bg-primary hover:bg-primary-variant text-white font-semibold mt-4" asChild>
+                  <a href="tel:00351912258575">
+                    Marcações: (+351) 912 258 575
+                  </a>
+                </Button>
+              </nav>
+            </div>
+          )}
         </div>
       </div>
       
