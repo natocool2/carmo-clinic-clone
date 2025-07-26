@@ -27,20 +27,6 @@ const ClinicSection = () => {
         }}
       ></div>
       
-      {/* New pattern image - middle layer */}
-      <div 
-        className="absolute bottom-[55px] right-0"
-        style={{
-          width: '326px',
-          height: '218px',
-          marginRight: '68px',
-          backgroundImage: `url(/lovable-uploads/f553d8ce-fb7c-4849-a406-76aeb5607dec.png)`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "contain",
-          zIndex: 6
-        }}
-      ></div>
-      
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
