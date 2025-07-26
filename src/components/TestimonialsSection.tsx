@@ -10,7 +10,7 @@ const testimonials = [
   {
     name: "Carlos Pereira",
     text: "Estou agradavelmente surpreendido com o nível de compaixão e empatia demonstrado pelo pessoal da vossa clínica. Ouviram atentamente as minhas preocupações e fizeram-me sentir confortável e à vontade.",
-    avatar: "/lovable-uploads/1669256d-610b-4c01-bc69-496673e925be.png"
+    avatar: "/lovable-uploads/2dae802f-fd62-4131-a70a-6a4fad6113b6.png"
   },
   {
     name: "Maria da Silva",
