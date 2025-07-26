@@ -41,7 +41,7 @@ const ClinicSection = () => {
           </div>
 
           {/* CTA Button - positioned within blue area */}
-          <div className="flex justify-center lg:justify-start" style={{ marginRight: '208px' }}>
+          <div className="absolute right-0" style={{ marginRight: '308px' }}>
             <Button
               size="lg"
               variant="secondary"
