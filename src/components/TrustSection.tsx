@@ -15,25 +15,20 @@ const TrustSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Image with overlapping circles */}
           <div className="relative">
-            <div className="relative w-full max-w-md mx-auto">
-              {/* Main oval image container */}
-              <div className="w-80 h-80 rounded-full overflow-hidden shadow-large relative">
-                <img
-                  src="/lovable-uploads/a620d0e5-8168-42c7-99e7-3e614d0b9bb1.png"
-                  alt="Médica com estetoscópio"
-                  className="w-full h-full object-cover"
-                />
-              </div>
+            <div className="image-container mx-auto">
+              {/* Main image - esquerda */}
+              <img
+                src="/lovable-uploads/a620d0e5-8168-42c7-99e7-3e614d0b9bb1.png"
+                alt="Médica com estetoscópio"
+                className="imagem-esquerda"
+              />
               
-              {/* Overlapping image - bottom right */}
-              <div className="absolute bottom-0 right-0 transform translate-x-1/4 translate-y-1/4 w-32 h-32 rounded-full overflow-hidden shadow-lg border-4 border-white">
-                <img
-                  src="/lovable-uploads/fe70c985-49cb-434c-ae2b-aa3203bd2395.png"
-                  alt="Equipamento dentário"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              
+              {/* Overlapping image - direita */}
+              <img
+                src="/lovable-uploads/fe70c985-49cb-434c-ae2b-aa3203bd2395.png"
+                alt="Equipamento dentário"
+                className="imagem-direita"
+              />
             </div>
           </div>
 

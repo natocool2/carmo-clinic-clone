@@ -129,4 +129,30 @@ All colors MUST be HSL. Based on Medicarmo brand colors.
     font-family: 'Inter', sans-serif;
     font-weight: 600;
   }
-}
+  }
+  
+  /* Custom image styles for Trust Section */
+  .image-container {
+    position: relative;
+    width: 500px;
+    height: auto;
+  }
+
+  .imagem-esquerda {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .imagem-direita {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    height: auto;
+    border-bottom-left-radius: 100% 40%;
+    border-bottom-right-radius: 100% 40%;
+    z-index: 2;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  }
