@@ -191,17 +191,24 @@ All colors MUST be HSL. Based on Medicarmo brand colors.
     bottom: -20px;
     left: 20px;
     width: 220px;
+    height: 120px;
     background-color: #7CB7E3;
     border-bottom-left-radius: 100% 60%;
     border-bottom-right-radius: 100% 60%;
-    padding: 20px;
+    padding: 20px 20px 40px 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     z-index: 3;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .logo-medicarmo img {
-    width: 100%;
+    width: 80%;
     height: auto;
     display: block;
+    object-fit: contain;
+    border-radius: 8px;
+    background-color: white;
+    padding: 8px;
   }
