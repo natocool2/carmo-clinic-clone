@@ -34,14 +34,6 @@ const TrustSection = () => {
                 />
               </div>
               
-              {/* Overlapping image - bottom center */}
-              <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/4 w-40 h-40 rounded-full overflow-hidden shadow-lg border-4 border-white">
-                <img
-                  src="/lovable-uploads/22451cb8-29a8-4573-9848-bcdc48d2c43a.png"
-                  alt="Consultório dentário"
-                  className="w-full h-full object-cover"
-                />
-              </div>
             </div>
           </div>
 
