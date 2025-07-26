@@ -139,7 +139,7 @@ All colors MUST be HSL. Based on Medicarmo brand colors.
   }
 
   .imagem-esquerda {
-    width: 100%;
+    width: 70%;
     height: auto;
     display: block;
   }
