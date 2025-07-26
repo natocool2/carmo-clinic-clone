@@ -47,7 +47,7 @@ const HealthStepsSection = () => {
                     <IconComponent className="w-8 h-8 text-white" />
                   </div>
                 </div>
-                <Card className="bg-card border-0 shadow-sm -mt-8 pt-12">
+                <Card className="bg-card border-0 shadow-sm -mt-8 pt-12 h-64">
                   <CardContent className="p-8 pt-4 text-center space-y-4">
                     <h3 className="text-lg font-semibold text-foreground">
                       {step.title}
