@@ -25,7 +25,7 @@ const testimonials = [
   {
     name: "Sofia Martins",
     text: "Extremamente satisfeita com a rapidez e eficiência do serviço na vossa clínica. Fui vista rapidamente, e o pessoal foi capaz de diagnosticar tudo rapidamente!",
-    avatar: "/lovable-uploads/4a2f019d-fae8-405d-b727-80ba581fb605.png"
+    avatar: "/lovable-uploads/4d83ed72-916f-406d-a25a-6938f1c1c3f4.png"
   }
 ];
 
