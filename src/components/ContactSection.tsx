@@ -80,7 +80,7 @@ const ContactSection = () => {
         {/* Form and Map */}
         <div className="grid grid-cols-1 lg:grid-cols-2 mt-8 mx-4 lg:mx-6">
           {/* Contact Form with white background */}
-          <div id="marcacao" className="bg-white p-6 lg:p-8 form-shadow -mt-8 lg:-ml-6 rounded-bl-lg">
+          <div id="marcacao" className="bg-white p-6 lg:p-8 form-shadow -mt-8 lg:-ml-6 rounded-bl-lg lg:rounded-bl-lg rounded-br-lg lg:rounded-br-none">
             <h3 className="text-2xl font-bold text-foreground mb-6">
               Fazer Marcação
             </h3>
@@ -118,7 +118,7 @@ const ContactSection = () => {
           </div>
 
           {/* Map */}
-          <div id="mapa" className="-mt-8 lg:mt-0">
+          <div id="mapa" className="lg:-mt-8">
             <Card className="h-full map-shadow">
               <CardContent className="p-0 h-full min-h-[300px] lg:min-h-[500px]">
                 <iframe
