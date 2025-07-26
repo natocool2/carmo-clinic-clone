@@ -26,7 +26,7 @@ const Header = () => {
               Sobre
             </a>
             <a
-              href="/lista-de-servicos"
+              href="#servicos"
               className="text-white hover:text-primary transition-colors font-medium"
             >
               Serviços

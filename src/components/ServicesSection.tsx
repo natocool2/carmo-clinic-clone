@@ -54,7 +54,7 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section className="py-20 bg-background relative overflow-hidden">
+    <section id="servicos" className="py-20 bg-background relative overflow-hidden">
       {/* Background pattern */}
       <div 
         className="absolute inset-0 opacity-10"
