@@ -8,7 +8,7 @@ const ClinicSection = () => {
       <div 
         className="absolute inset-0 bg-primary"
         style={{
-          marginRight: '308px',
+          marginRight: '258px',
           backgroundImage: `url(/lovable-uploads/36279678-d9bc-4a4a-ac7a-b9994a66f05a.png)`,
           backgroundRepeat: "repeat",
           backgroundSize: "50px 50px"
