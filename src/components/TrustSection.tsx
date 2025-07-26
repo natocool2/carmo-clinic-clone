@@ -19,7 +19,7 @@ const TrustSection = () => {
           backgroundRepeat: "no-repeat",
           backgroundSize: "232px 232px",
           backgroundPosition: "calc(50% - 320px) calc(50% - 133px)",
-          zIndex: 1
+          zIndex: 15
         }}
       ></div>
       
