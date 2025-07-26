@@ -10,6 +10,17 @@ const TrustSection = () => {
           backgroundSize: "50px 50px"
         }}
       ></div>
+
+      {/* Middle layer pattern - à frente da imagem de trás e atrás da imagem da frente */}
+      <div 
+        className="absolute inset-0 opacity-20"
+        style={{
+          backgroundImage: `url(/lovable-uploads/ebfabf12-1ce3-477e-b5a1-a91845a69cf7.png)`,
+          backgroundRepeat: "repeat",
+          backgroundSize: "80px 80px",
+          zIndex: 5
+        }}
+      ></div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
