@@ -148,7 +148,7 @@ All colors MUST be HSL. Based on Medicarmo brand colors.
     position: absolute;
     bottom: 0;
     right: 0;
-    transform: translateX(calc(25% - 160px)) translateY(25%);
+    transform: translateX(calc(25% - 160px)) translateY(calc(25% - 30px));
     width: 56%;
     height: auto;
     border-bottom-left-radius: 100% 40%;
