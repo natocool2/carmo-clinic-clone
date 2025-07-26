@@ -203,3 +203,14 @@ All colors MUST be HSL. Based on Medicarmo brand colors.
     height: auto;
     display: block;
   }
+
+  /* Caixa de serviços */
+  .caixa-servicos {
+    background-color: #417BFC;
+    color: white;
+    padding: 40px;
+    width: 100%;
+    max-width: 950px;
+    border-bottom-right-radius: 400px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  }
