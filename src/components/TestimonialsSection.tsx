@@ -37,10 +37,10 @@ const TestimonialsSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Título na primeira coluna */}
           <div className="flex flex-col justify-start mt-5">
-            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
               Testemunhos
             </h2>
-            <p className="text-muted-foreground text-base">
+            <p className="text-muted-foreground text-lg">
               Ajudar as pessoas é sempre a nossa maior prioridade
             </p>
           </div>
