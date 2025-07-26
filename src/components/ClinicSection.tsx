@@ -8,7 +8,8 @@ const ClinicSection = () => {
       <div 
         className="absolute inset-0 bg-primary"
         style={{
-          marginRight: '258px'
+          marginRight: '258px',
+          zIndex: 1
         }}
       ></div>
       
@@ -19,7 +20,8 @@ const ClinicSection = () => {
           marginRight: '258px',
           backgroundImage: `url(/lovable-uploads/eceaa431-4dfd-4a79-a98a-2db2a005d741.png)`,
           backgroundRepeat: "repeat",
-          backgroundSize: "contain"
+          backgroundSize: "contain",
+          zIndex: 5
         }}
       ></div>
       
