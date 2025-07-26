@@ -38,7 +38,7 @@ const TestimonialsSection = () => {
         style={{
           backgroundImage: `url(/lovable-uploads/a036febb-9103-4037-b195-5517a7c73458.png)`,
           backgroundRepeat: "no-repeat",
-          backgroundSize: "196px 196px",
+          backgroundSize: "216px 216px",
           backgroundPosition: "0% 60%"
         }}
       ></div>
