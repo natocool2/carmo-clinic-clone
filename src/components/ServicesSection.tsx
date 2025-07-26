@@ -71,7 +71,7 @@ const ServicesSection = () => {
         style={{
           backgroundImage: `url(/lovable-uploads/22f0ca5f-8e43-4bd3-a05a-8c379a0e8d7f.png)`,
           backgroundRepeat: "no-repeat",
-          backgroundSize: "240px 240px",
+          backgroundSize: "288px 288px",
           backgroundPosition: "calc(50% - 20px) 70px"
         }}
       ></div>
