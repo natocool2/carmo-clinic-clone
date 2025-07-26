@@ -44,7 +44,7 @@ const ContactSection = () => {
         </div>
 
         {/* Contact Info Bar */}
-        <div className="bg-primary text-white p-8 rounded-t-lg">
+        <div className="bg-primary text-white p-8 rounded-t-lg mx-4 lg:mx-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             {/* Address */}
             <div className="flex flex-col items-center">
