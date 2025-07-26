@@ -154,7 +154,7 @@ All colors MUST be HSL. Based on Medicarmo brand colors.
     height: auto;
     border-bottom-left-radius: 100% 40%;
     border-bottom-right-radius: 100% 40%;
-    z-index: 2;
+    z-index: 20;
   }
 
   /* Custom styles for AboutSection card effect */
