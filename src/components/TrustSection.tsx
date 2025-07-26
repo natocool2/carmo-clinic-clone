@@ -25,8 +25,8 @@ const TrustSection = () => {
                 />
               </div>
               
-              {/* Overlapping image - top left */}
-              <div className="absolute top-0 left-0 w-32 h-32 rounded-full overflow-hidden shadow-lg border-4 border-white">
+              {/* Overlapping image - bottom right */}
+              <div className="absolute bottom-0 right-0 transform translate-x-1/4 translate-y-1/4 w-32 h-32 rounded-full overflow-hidden shadow-lg border-4 border-white">
                 <img
                   src="/lovable-uploads/fe70c985-49cb-434c-ae2b-aa3203bd2395.png"
                   alt="Equipamento dentário"
