@@ -18,7 +18,7 @@ const TrustSection = () => {
           backgroundImage: `url(/lovable-uploads/ebfabf12-1ce3-477e-b5a1-a91845a69cf7.png)`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "232px 232px",
-          backgroundPosition: "calc(50% - 320px) calc(50% - 118px)",
+          backgroundPosition: "calc(50% - 320px) calc(50% - 113px)",
           zIndex: 15
         }}
       ></div>
