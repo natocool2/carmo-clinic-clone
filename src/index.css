@@ -219,3 +219,13 @@ All colors MUST be HSL. Based on Medicarmo brand colors.
   .card-shadow {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   }
+
+  /* Shadow parcial para formulário (sem direita e top) */
+  .form-shadow {
+    box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Shadow parcial para mapa (sem esquerda e top) */
+  .map-shadow {
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.15);
+  }
