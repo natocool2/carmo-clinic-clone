@@ -82,7 +82,7 @@ const ServicesSection = () => {
           {services.slice(0, 2).map((service, index) => (
             <div 
               key={index}
-              className="relative h-48 overflow-hidden group cursor-pointer"
+              className="relative h-48 overflow-hidden group cursor-pointer card-shadow"
               style={{
                 backgroundImage: `url(${service.image})`,
                 backgroundSize: "cover",
@@ -104,7 +104,7 @@ const ServicesSection = () => {
           {services.slice(2, 6).map((service, index) => (
             <div 
               key={index + 2}
-              className="relative h-48 overflow-hidden group cursor-pointer"
+              className="relative h-48 overflow-hidden group cursor-pointer card-shadow"
               style={{
                 backgroundImage: `url(${service.image})`,
                 backgroundSize: "cover",
@@ -126,7 +126,7 @@ const ServicesSection = () => {
           {services.slice(6, 8).map((service, index) => (
             <div 
               key={index + 6}
-              className="relative h-48 overflow-hidden group cursor-pointer"
+              className="relative h-48 overflow-hidden group cursor-pointer card-shadow"
               style={{
                 backgroundImage: `url(${service.image})`,
                 backgroundSize: "cover",

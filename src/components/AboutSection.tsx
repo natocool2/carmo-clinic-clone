@@ -70,7 +70,7 @@ const AboutSection = () => {
               <img
                 src={doctorPortrait}
                 alt="Dra. Rita - Medicarmo"
-                className="imagem-medica"
+                className="imagem-medica card-shadow"
               />
               
               {/* Logo at bottom */}

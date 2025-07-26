@@ -20,14 +20,14 @@ const TrustSection = () => {
               <img
                 src="/lovable-uploads/a620d0e5-8168-42c7-99e7-3e614d0b9bb1.png"
                 alt="Médica com estetoscópio"
-                className="imagem-esquerda"
+                className="imagem-esquerda card-shadow"
               />
               
               {/* Overlapping image - direita */}
               <img
                 src="/lovable-uploads/fe70c985-49cb-434c-ae2b-aa3203bd2395.png"
                 alt="Equipamento dentário"
-                className="imagem-direita"
+                className="imagem-direita card-shadow"
               />
             </div>
           </div>
