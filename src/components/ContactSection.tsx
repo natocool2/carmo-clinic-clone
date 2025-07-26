@@ -87,24 +87,24 @@ const ContactSection = () => {
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
               <Input
                 {...register("name", { required: true })}
-                placeholder="Your Name"
+                placeholder="Seu Nome"
                 className="w-full"
               />
               <Input
                 {...register("email", { required: true })}
                 type="email"
-                placeholder="Your Email"
+                placeholder="Seu Email"
                 className="w-full"
               />
               <Input
                 {...register("phone", { required: true })}
                 type="tel"
-                placeholder="Your Phone Number"
+                placeholder="Seu Número de Telemóvel"
                 className="w-full"
               />
               <Textarea
                 {...register("message")}
-                placeholder="Message"
+                placeholder="Mensagem"
                 rows={6}
                 className="w-full resize-none"
               />
@@ -112,7 +112,7 @@ const ContactSection = () => {
                 type="submit"
                 className="bg-primary hover:bg-primary/90 text-white px-8"
               >
-                Send Request
+                Enviar Pedido
               </Button>
             </form>
           </div>
