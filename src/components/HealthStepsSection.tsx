@@ -41,21 +41,23 @@ const HealthStepsSection = () => {
           {steps.map((step, index) => {
             const IconComponent = step.icon;
             return (
-              <Card key={index} className="bg-card border-0 shadow-sm">
-                <CardContent className="p-8 text-center space-y-4">
-                  <div className="flex justify-center">
-                    <div className="w-16 h-16 bg-primary rounded-lg flex items-center justify-center">
-                      <IconComponent className="w-8 h-8 text-white" />
-                    </div>
+              <div key={index} className="relative">
+                <div className="flex justify-center">
+                  <div className="w-16 h-16 bg-primary rounded-lg flex items-center justify-center relative z-10">
+                    <IconComponent className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-lg font-semibold text-foreground">
-                    {step.title}
-                  </h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    {step.description}
-                  </p>
-                </CardContent>
-              </Card>
+                </div>
+                <Card className="bg-card border-0 shadow-sm -mt-8 pt-12">
+                  <CardContent className="p-8 pt-4 text-center space-y-4">
+                    <h3 className="text-lg font-semibold text-foreground">
+                      {step.title}
+                    </h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      {step.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
             );
           })}
         </div>
