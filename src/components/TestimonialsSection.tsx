@@ -36,7 +36,7 @@ const TestimonialsSection = () => {
         {/* Primeira linha: Título + 2 cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Título na primeira coluna */}
-          <div className="flex flex-col justify-start mt-2.5">
+          <div className="flex flex-col justify-start mt-5">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
               Testemunhos
             </h2>
