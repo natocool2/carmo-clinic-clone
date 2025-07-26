@@ -79,8 +79,8 @@ const ContactSection = () => {
 
         {/* Form and Map */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12" style={{ marginTop: '30px', marginLeft: '25px' }}>
-          {/* Contact Form */}
-          <div id="marcacao">
+          {/* Contact Form with white background */}
+          <div id="marcacao" className="bg-white p-8" style={{ marginLeft: '-25px', marginTop: '-30px' }}>
             <h3 className="text-2xl font-bold text-foreground mb-6">
               Fazer Marcação
             </h3>
