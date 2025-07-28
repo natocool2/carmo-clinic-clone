@@ -78,7 +78,7 @@ const ServicesSection = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         {/* Responsive grid layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 px-4 md:px-8 lg:px-16 auto-rows-[300px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 px-4 md:px-8 lg:px-16">
           {/* First row - Header text (responsive spans) */}
           <div className="col-span-1 md:col-span-2 space-y-6 flex flex-col justify-center transform -translate-y-0 md:-translate-y-5">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
@@ -93,7 +93,7 @@ const ServicesSection = () => {
           {services.slice(0, 2).map((service, index) => (
             <div 
               key={index}
-              className="relative overflow-hidden group cursor-pointer card-shadow h-full"
+              className="relative aspect-square overflow-hidden group cursor-pointer card-shadow"
               style={{
                 backgroundImage: `url(${service.image})`,
                 backgroundSize: "cover",
@@ -115,7 +115,7 @@ const ServicesSection = () => {
           {services.slice(2, 6).map((service, index) => (
             <div 
               key={index + 2}
-              className="relative overflow-hidden group cursor-pointer card-shadow h-full"
+              className="relative aspect-square overflow-hidden group cursor-pointer card-shadow"
               style={{
                 backgroundImage: `url(${service.image})`,
                 backgroundSize: "cover",
@@ -137,7 +137,7 @@ const ServicesSection = () => {
           {services.slice(6, 8).map((service, index) => (
             <div 
               key={index + 6}
-              className="relative overflow-hidden group cursor-pointer card-shadow h-full"
+              className="relative aspect-square overflow-hidden group cursor-pointer card-shadow"
               style={{
                 backgroundImage: `url(${service.image})`,
                 backgroundSize: "cover",
@@ -156,7 +156,7 @@ const ServicesSection = () => {
           ))}
           
           {/* Contact Card spanning responsive columns */}
-          <div className="col-span-1 md:col-span-2 relative overflow-hidden caixa-servicos flex flex-col justify-start h-full">
+          <div className="col-span-1 md:col-span-2 relative aspect-square overflow-hidden caixa-servicos flex flex-col justify-start">
             <div className="space-y-4">
               <div className="flex items-center gap-2">
                 <Phone className="w-5 h-5" />
