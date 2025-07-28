@@ -156,7 +156,7 @@ const ServicesSection = () => {
           ))}
           
           {/* Contact Card spanning responsive columns */}
-          <div className="col-span-1 md:col-span-2 relative aspect-square md:aspect-[2:1] overflow-hidden caixa-servicos flex flex-col justify-start">
+          <div className="col-span-1 md:col-span-2 relative aspect-square overflow-hidden caixa-servicos flex flex-col justify-start">
             <div className="space-y-4">
               <div className="flex items-center gap-2">
                 <Phone className="w-5 h-5" />
