@@ -78,7 +78,7 @@ const ServicesSection = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         {/* Responsive grid layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 px-4 md:px-8 lg:px-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[3px] px-4 md:px-8 lg:px-16">
           {/* First row - Header text (responsive spans) */}
           <div className="col-span-1 md:col-span-2 space-y-6 flex flex-col justify-center transform -translate-y-0 md:-translate-y-5">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
